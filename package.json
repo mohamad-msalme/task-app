@@ -1,0 +1,33 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production tsc",
+    "start": "npm run build && cross-env NODE_ENV=production node dist/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/hbs": "^4.0.4",
+    "@types/node": "^20.12.2",
+    "@types/validator": "^13.11.9",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "chalk": "^4.1.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "hbs": "^4.2.0",
+    "validator": "^13.11.0"
+  }
+}
